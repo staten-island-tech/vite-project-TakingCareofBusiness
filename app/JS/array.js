@@ -120,12 +120,12 @@ let albums = [
     albumAmount: 14,
   },
   {
-    name: "The Beatles (The White Album)",
-    artist: "The Beatles",
-    releaseDate: 1968,
-    genre: "Rock",
-    albumLength: 99,
-    albumAmount: 31,
+    name: "Disintegration",
+    artist: "The Cure",
+    releaseDate: 1989,
+    genre: "Alternative",
+    albumLength: 72,
+    albumAmount: 12,
   },
   {
     name: "OK Computer",
