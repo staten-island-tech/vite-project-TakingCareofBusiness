@@ -160,3 +160,4 @@ let albums = [
     albumAmount: 14,
   },
 ];
+export { albums };
