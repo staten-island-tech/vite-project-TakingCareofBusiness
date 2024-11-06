@@ -96,6 +96,7 @@ let albums = [
     genre: "Hip-Hop",
     albumLength: 77,
     albumAmount: 20,
+    cover: "FettyWapDeluxeEdition.png",
   },
   {
     name: "Yoshimi Battles the Pink Robots",
@@ -104,6 +105,7 @@ let albums = [
     genre: "Alternative",
     albumLength: 48,
     albumAmount: 11,
+    cover: "YoshimiBattlesThePinkRobots.png",
   },
   {
     name: "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
@@ -112,6 +114,7 @@ let albums = [
     genre: "Pop",
     albumLength: 39,
     albumAmount: 11,
+    cover: "TheRiseAndFallOfZiggyStardustAndTheSpidersFromMars2012Remaster.png",
   },
   {
     name: "Pinkerton",
@@ -120,6 +123,7 @@ let albums = [
     genre: "Rock",
     albumLength: 35,
     albumAmount: 10,
+    cover: "Pinkerton.png",
   },
   {
     name: "Lahai",
