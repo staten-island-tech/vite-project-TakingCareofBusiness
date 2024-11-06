@@ -33,7 +33,7 @@ let albums = [
     genre: "Hip-Hop",
     albumLength: 41,
     albumAmount: 14,
-    cover: "ILayDownMyLifeForYou.png",
+    cover: "ILayMyLifeDownForYou.png",
   },
   {
     name: "The Bridge",
