@@ -6,6 +6,7 @@ let albums = [
     genre: "Rock y Alternativo",
     albumLength: 68,
     albumAmount: 20,
+    cover: "Almendra.png",
   },
   {
     name: "An Innocent Man",
@@ -14,6 +15,7 @@ let albums = [
     genre: "Rock",
     albumLength: 41,
     albumAmount: 10,
+    cover: "AnInnocentMan.png",
   },
   {
     name: "The Beatles (The White Album)",
@@ -22,6 +24,7 @@ let albums = [
     genre: "Rock",
     albumLength: 99,
     albumAmount: 31,
+    cover: "TheBeatlesTheWhiteAlbum.png",
   },
   {
     name: "I LAY DOWN MY LIFE FOR YOU",
@@ -30,6 +33,7 @@ let albums = [
     genre: "Hip-Hop",
     albumLength: 41,
     albumAmount: 14,
+    cover: "ILayMyLifeDownForYou.png",
   },
   {
     name: "The Bridge",
@@ -38,6 +42,7 @@ let albums = [
     genre: "Pop",
     albumLength: 41,
     albumAmount: 9,
+    cover: "TheBridge.png",
   },
   {
     name: "Goodbye Yellow Brick Road",
@@ -46,6 +51,7 @@ let albums = [
     genre: "Rock",
     albumLength: 76,
     albumAmount: 17,
+    cover: "GoodbyeYellowBrickRoad.png",
   },
   {
     name: "Loaded (Remastered)",
@@ -54,6 +60,7 @@ let albums = [
     genre: "Rock",
     albumLength: 56,
     albumAmount: 14,
+    cover: "LoadedRemastered.png",
   },
   {
     name: "Weezer (Deluxe Edition)",
@@ -62,6 +69,7 @@ let albums = [
     genre: "Rock",
     albumLength: 92,
     albumAmount: 24,
+    cover: "WeezerDeluxeEdition.png",
   },
   {
     name: "Candy Coated Fury",
@@ -70,6 +78,7 @@ let albums = [
     genre: "Punk",
     albumLength: 55,
     albumAmount: 14,
+    cover: "CandyCoatedFury.png",
   },
   {
     name: "The Velvet Undergorund & Nico (45th Anniversary Edition)",
@@ -78,6 +87,7 @@ let albums = [
     genre: "Rock",
     albumLength: 49,
     albumAmount: 11,
+    cover: "TheVelvetUnderground&Nico45thAnniversaryEdition.png",
   },
   {
     name: "Fetty Wap (Deluxe Edition)",
@@ -121,11 +131,11 @@ let albums = [
   },
   {
     name: "Disintegration",
-    artist: "The Beatles",
-    releaseDate: 1968,
-    genre: "Rock",
-    albumLength: 99,
-    albumAmount: 31,
+    artist: "The Cure",
+    releaseDate: 1989,
+    genre: "Alternative",
+    albumLength: 72,
+    albumAmount: 12,
   },
   {
     name: "OK Computer",
@@ -160,3 +170,4 @@ let albums = [
     albumAmount: 14,
   },
 ];
+export { albums };

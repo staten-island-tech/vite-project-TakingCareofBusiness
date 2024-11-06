@@ -1,3 +1,57 @@
-body {
+body * {
   background-color: #9b7046;
+  font-size: 10px;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  color:#000000;
+  font-family: "Glass Antiqua";
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+.form-container {
+  box-sizing:border-box;
+  width:80%;
+  margin:1rem auto;
+  padding:2.5%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  align-items:center;
+  background-image:url(Background.png);
+  background-size:10rem;
+  background-repeat: no-repeat;
+  background-position-x:right;
+  background-position-y:bottom;
+  border:0.3rem solid black;
+  border-radius:5rem;
+}
+.card-container {
+  box-sizing:border-box;
+  width:80%;
+  margin:1rem auto;
+  padding:2.5%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+}
+.card {
+  width:30%;
+  border:0.2rem solid #000000;
+  text-align:center;
+  margin-bottom:0.8rem;
+  border-radius:2rem;
+  height: 30rem;
+}
+.card-image {
+  width: 80%;
+  height: 60%;
+}
+.card-header {
+  font-size: 2.4rem;
 }
