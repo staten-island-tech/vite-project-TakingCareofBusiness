@@ -132,6 +132,7 @@ let albums = [
     genre: "Electronic",
     albumLength: 41,
     albumAmount: 14,
+    cover: "Lahai.png",
   },
   {
     name: "Disintegration",
@@ -140,6 +141,7 @@ let albums = [
     genre: "Alternative",
     albumLength: 72,
     albumAmount: 12,
+    cover: "Disintegration.png",
   },
   {
     name: "OK Computer",
@@ -148,6 +150,7 @@ let albums = [
     genre: "Alternative",
     albumLength: 54,
     albumAmount: 12,
+    cover: "OkComputer.png",
   },
   {
     name: "What's Going On",
