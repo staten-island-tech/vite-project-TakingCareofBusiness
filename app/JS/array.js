@@ -159,6 +159,7 @@ let albums = [
     genre: "Soul",
     albumLength: 36,
     albumAmount: 9,
+    cover: "WhatsGoingOn.png",
   },
   {
     name: "NO HANDS",
@@ -167,6 +168,7 @@ let albums = [
     genre: "Hip-Hop",
     albumLength: 31,
     albumAmount: 12,
+    cover: "NoHands.png",
   },
   {
     name: "CHROMAKOPIA",
@@ -175,6 +177,7 @@ let albums = [
     genre: "Hip-Hop",
     albumLength: 53,
     albumAmount: 14,
+    cover: "Chromakopia.png",
   },
 ];
 export { albums };
