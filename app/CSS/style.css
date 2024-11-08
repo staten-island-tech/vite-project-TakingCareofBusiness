@@ -52,4 +52,7 @@ h1, h2, h3, h4, p {
 .header-container {
   font-size: 1.6cqh;
   height:20%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
 }
