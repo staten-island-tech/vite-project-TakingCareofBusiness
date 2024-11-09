@@ -16,7 +16,9 @@ h1, h2, h3, h4, p {
   text-align:center;
 }
 
-
+h1 {
+  font-size:3rem;
+}
 .card-container {
   box-sizing:border-box;
   width:80%;
@@ -55,4 +57,14 @@ h1, h2, h3, h4, p {
   display:flex;
   flex-direction:row;
   align-items:center;
+}
+.style-button-container {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+.style-button {
+  width: 15rem;
+  height: 3rem;
 }
