@@ -68,3 +68,11 @@ h1 {
   width: 15rem;
   height: 3rem;
 }
+.sort-button-container {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+.sort-button {
+  width:32%;
+}

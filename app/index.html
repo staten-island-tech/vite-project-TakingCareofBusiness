@@ -12,11 +12,38 @@
       <button class="style-button">Spotify</button>
       <button class="style-button">Apple Music</button>
     </div>
-    <div>
-      <select id="genre-select"></select>
-        <option value=""></option>
-      <select id="release-select"></select>
-      <select id="length-select"></select>
+    <div class="sort-button-container">
+      <label for="genre-select">Select Genre</label>
+      <label for="release-select">Select Release Date</label>
+      <label for="length-select">Select Album Length</label>
+      <select class="sort-button" name="genre-select" id="genre-select">
+        <option value="alternative">Alternative</option>
+        <option value="electronic">Electronic</option>
+        <option value="hipHop">Hip-Hop</option>
+        <option value="pop">Pop</option>
+        <option value="punk">Punk</option>
+        <option value="rock">Rock</option>
+        <option value="rockYAlternativo">Rock Y Alternativo</option>
+        <option value="soul">Soul</option>
+      </select>
+      <select class="sort-button" name="release-select" id="release-select">Release Date
+        <option value="1960-1969">1960-1969</option>
+        <option value="1970-1979">1970-1979</option>
+        <option value="1980-1989">1980-1989</option>
+        <option value="1990-1999">1990-1999</option>
+        <option value="2000-2009">2000-2009</option>
+        <option value="2010-2019">2010-2019</option>
+        <option value="2020up">2020 to the Present</option>
+      </select>
+      <select class="sort-button" name="length-select" id="length-select">
+        <option value="30-39">30-39 Minutes Long</option>
+        <option value="40-49">40-49 Minutes Long</option>
+        <option value="50-59">50-59 Minutes Long</option>
+        <option value="60-69">60-69 Minutes Long</option>
+        <option value="70-79">70-79 Minutes Long</option>
+        <option value="80-89">80-89 Minutes Long</option>
+        <option value="90-99">90-99 Minutes Long</option>
+      </select>
     </div>
     <div class="button-container"></div>
     <div class="card-container"></div>
