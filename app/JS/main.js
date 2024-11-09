@@ -12,6 +12,6 @@ function cardAdder(array) {
 }
 function createSorted() {
   document.querySelector(".card-container").innerHTML = "";
-  albums.filter;
+  albums.filter((album) =>)
 }
 cardAdder(albums);
