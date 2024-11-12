@@ -15,20 +15,22 @@ function sortButtons(array) {
   document
     .querySelector(".sort-button-range")
     .addEventListener("click", function (event) {
-      document.querySelector(".card-container").innerHTML = "";
-      category = event.target.className;
+      let category = event.target.className;
       console.log(category);
-      let selectedValueRange = event.target.value;
-      let rangeList = [];
-      let rangeSplit = selectedValueRange.split("-");
-      rangeList.push(rangeSplit);
-      print(rangeList);
-      let rangeBottom = rangeList[0];
-      let rangeTop = rangeList[1];
-      newArray = Object.values(array).filter(
-        (album) => album.category >= rangeBottom || album.x <= rangeTop
-      );
-      cardAdder(newArray);
+      if (!(category === "sort-button-range" || category === "sort-button")) {
+        document.querySelector(".card-container").innerHTML = "";
+        let selectedValueRange = event.target.value;
+        let rangeList = [];
+        let rangeSplit = selectedValueRange.split("-");
+        rangeList.push(rangeSplit);
+        console.log(rangeList);
+        let rangeBottom = rangeList[0];
+        let rangeTop = rangeList[1];
+        newArray = Object.values(array).filter(
+          (album) => album.category >= rangeBottom || album.x <= rangeTop
+        );
+        cardAdder(newArray);
+      }
     });
 }
 cardAdder(albums);
