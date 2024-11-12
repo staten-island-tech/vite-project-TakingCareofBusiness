@@ -11,18 +11,26 @@ function cardAdder(array) {
       )
   );
 }
-function sortButtonsRange(category, range1, range2, array) {
-  x = category;
+function sortButtons() {
   document
     .querySelector(".sort-button-range")
-    .addEventListener("click", function () {
+    .addEventListener("click", function (event) {
       document.querySelector(".card-container").innerHTML = "";
-
-      newArray = Object.values(array).filter(
-        (album) => album.x >= range1 || album.x <= range2
-      );
-      return newArray;
+      let selectedValueRange = event.target.value;
+      let rangeList = [];
+      let rangeSplit = selectedValueRange.split("-");
+      rangeList.push(rangeSplit);
+      print(rangeList);
+      let rangeBottom = rangeList[0];
+      let rangeTop = rangeList[1];
+      return selectedValueRange, rangeBottom, rangeTop;
     });
+}
+function newCardsRange() {
+  newArray = Object.values(array).filter(
+    (album) => album.x >= range1 || album.x <= range2
+  );
+  return newArray;
 }
 function sortButtonsSelect(modArray) {
   document
