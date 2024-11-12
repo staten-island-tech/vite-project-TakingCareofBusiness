@@ -10,8 +10,11 @@ function cardAdder(array) {
       )
   );
 }
-function createSorted() {
+function sortButtonsRange(category, range1, range2, array) {
+  x = category;
   document.querySelector(".card-container").innerHTML = "";
-  albums.filter((album) =>)
+  array.filter((album) => album.x >= range1 || album.x <= range2);
+  return album;
 }
+
 cardAdder(albums);
