@@ -15,20 +15,38 @@ function sortButtons(array) {
   document
     .querySelector(".sort-button-range")
     .addEventListener("click", function (event) {
+      document.querySelector(".card-container").innerHTML = "";
+      let selectedValueRange = event.target.value;
+      newArray = Object.values(array).filter(
+        (album) => album.genre === selectedValueRange
+      );
+    });
+  document
+    .querySelector(".sort-button-range")
+    .addEventListener("click", function (event) {
+      let typeThing = event.target.tagName;
+      console.log(typeThing);
       let category = event.target.className;
-      console.log(category);
-      if (!(category === "sort-button-range" || category === "sort-button")) {
+      if (!(typeThing == "SELECT")) {
         document.querySelector(".card-container").innerHTML = "";
         let selectedValueRange = event.target.value;
-        let rangeList = [];
         let rangeSplit = selectedValueRange.split("-");
-        rangeList.push(rangeSplit);
-        console.log(rangeList);
-        let rangeBottom = rangeList[0];
-        let rangeTop = rangeList[1];
-        newArray = Object.values(array).filter(
-          (album) => album.category >= rangeBottom || album.x <= rangeTop
-        );
+        console.log(rangeSplit);
+        let rangeBottom = rangeSplit[0];
+        let rangeTop = rangeSplit[1];
+        if (category === "releaseDate") {
+          newArray = Object.values(array).filter(
+            (album) =>
+              album.releaseDate >= rangeBottom && album.releaseDate <= rangeTop
+          );
+        }
+        if (category === "albumLength") {
+          newArray = Object.values(array).filter(
+            (album) =>
+              album.albumLength >= rangeBottom && album.albumLength <= rangeTop
+          );
+        }
+        console.log(newArray);
         cardAdder(newArray);
       }
     });
