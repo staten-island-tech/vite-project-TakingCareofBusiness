@@ -1,5 +1,6 @@
 import "../CSS/style.css";
 import { albums } from "./array.js";
+let newArray;
 function cardAdder(array) {
   array.forEach((album) =>
     document
@@ -12,9 +13,24 @@ function cardAdder(array) {
 }
 function sortButtonsRange(category, range1, range2, array) {
   x = category;
-  document.querySelector(".card-container").innerHTML = "";
-  array.filter((album) => album.x >= range1 || album.x <= range2);
-  return album;
+  document
+    .querySelector(".sort-button-range")
+    .addEventListener("click", function () {
+      document.querySelector(".card-container").innerHTML = "";
+
+      newArray = Object.values(array).filter(
+        (album) => album.x >= range1 || album.x <= range2
+      );
+      return newArray;
+    });
 }
-document.querySelector(".sort-button-range");
+function sortButtonsSelect(modArray) {
+  document
+    .querySelector(".sort-button-range")
+    .addEventListener("click", function () {
+      cardAdder(modArray);
+    });
+}
+
 cardAdder(albums);
+sortButtonsSelect(sortButtonsRange());
