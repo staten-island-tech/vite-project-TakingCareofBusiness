@@ -23,10 +23,11 @@ function sortButtons() {
       print(rangeList);
       let rangeBottom = rangeList[0];
       let rangeTop = rangeList[1];
-      return selectedValueRange, rangeBottom, rangeTop;
+      let returnList = [selectedValueRange, rangeBottom, rangeTop];
+      return returnList;
     });
 }
-function newCardsRange() {
+function newCardsRange(list) {
   newArray = Object.values(array).filter(
     (album) => album.x >= range1 || album.x <= range2
   );
