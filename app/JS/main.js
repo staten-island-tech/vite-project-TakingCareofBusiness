@@ -11,11 +11,13 @@ function cardAdder(array) {
       )
   );
 }
-function sortButtons() {
+function sortButtons(array) {
   document
     .querySelector(".sort-button-range")
     .addEventListener("click", function (event) {
       document.querySelector(".card-container").innerHTML = "";
+      category = event.target.className;
+      console.log(category);
       let selectedValueRange = event.target.value;
       let rangeList = [];
       let rangeSplit = selectedValueRange.split("-");
@@ -23,23 +25,11 @@ function sortButtons() {
       print(rangeList);
       let rangeBottom = rangeList[0];
       let rangeTop = rangeList[1];
-      let returnList = [selectedValueRange, rangeBottom, rangeTop];
-      return returnList;
+      newArray = Object.values(array).filter(
+        (album) => album.category >= rangeBottom || album.x <= rangeTop
+      );
+      cardAdder(newArray);
     });
 }
-function newCardsRange(list) {
-  newArray = Object.values(array).filter(
-    (album) => album.x >= range1 || album.x <= range2
-  );
-  return newArray;
-}
-function sortButtonsSelect(modArray) {
-  document
-    .querySelector(".sort-button-range")
-    .addEventListener("click", function () {
-      cardAdder(modArray);
-    });
-}
-
 cardAdder(albums);
-sortButtonsSelect(sortButtonsRange());
+sortButtons(albums);
