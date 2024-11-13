@@ -5,11 +5,11 @@ body * {
   box-sizing:border-box;
   margin:0;
   padding:0;
-  color:#000000;
+  color:var(--text);
   font-family: "Glass Antiqua";
 }
 body {
-  background-color: var(--background-color);
+  background-color: var(--primary);
 }
 h1, h2, h3, h4, p {
   margin: 0;
@@ -29,16 +29,16 @@ h1 {
   align-items:center;
   flex-wrap:wrap;
   justify-content:space-evenly;
-  background-color: var(--background-color);
+  background-color: var(--primary);
 }
 .card {
   width:23%;
-  border:0.2rem solid #000000;
+  border:0.2rem solid var(--text);
   text-align:center;
   margin-bottom:0.8rem;
   border-radius:2rem;
   height: 25rem;
-  background-color: #8b8683;
+  background-color: var(--secondary);
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -47,12 +47,11 @@ h1 {
 .card-image {
   height: 50%;
 }
-.info-box {
+.info-container {
   width: 80%;
   height: 15%;
 }
 .header-container {
-  font-size: 1.6cqh;
   height:20%;
   display:flex;
   flex-direction:row;
@@ -67,6 +66,8 @@ h1 {
 .style-button {
   width: 15rem;
   height: 3rem;
+  font-size:1rem;
+  border: 0.2rem solid var(--text);
 }
 .sort-button-container {
   display:flex;
@@ -76,8 +77,29 @@ h1 {
 }
 .sort-button {
   width:30%;
+  font-size:1rem;
 }
 label {
   width:33%;
   text-align:center;
+  font-size: 1.5rem;
+}
+p {
+  font-size:0.78rem;
+}
+h2 {
+  font-size: 2.5cqh;
+}
+button, select, option {
+  background-color: var(--secondary);
+  border:none;
+}
+select {
+  border: 0.1rem solid var(--text);
+}
+.remove-button-container {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  margin-top: 3rem;
 }

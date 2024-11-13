@@ -1,6 +1,23 @@
 :root {
-    --title: 7rem;
-    --card-title: 4rem;
-    --card-description: 2.4rem;
-    --background-color: #9b7046;
+    --spotify-primary:  #000000;
+    --spotify-secondary: #1cd363;
+    --spotify-text: #ffffff;
+    --apple-primary:#ffffff;
+    --apple-secondary: #fb243b;
+    --apple-text: #000000;
+}
+.Spotify {
+    --primary: var(--spotify-primary);
+    --secondary: var(--spotify-secondary);
+    --text: var(--spotify-text);
+}
+.Apple {
+    --primary: var(--apple-primary);
+    --secondary: var(--apple-secondary);
+    --text: var(--apple-text);
+}
+.normal {
+    --primary: #9b7046;
+    --secondary: #8b8683;
+    --text: #000000;
 }

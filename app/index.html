@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
+  <body class="normal">
     <h1 class="title">The Albums I've Listened To Recently</h1>
     <div class="style-button-container">
-      <button class="style-button">Spotify</button>
-      <button class="style-button">Apple Music</button>
+      <button class="style-button" id="Spotify-button">Spotify</button>
+      <button class="style-button" id="Apple-button">Apple Music</button>
     </div>
     <div class="sort-button-container">
       <label for="genre-select">Select Genre</label>
@@ -45,8 +45,11 @@
         <option class="albumLength" value="90-99">90-99 Minutes Long</option>
       </select>
     </div>
-    <div class="button-container"></div>
     <div class="card-container"></div>
+    <div class="remove-button-container">
+      <button class="style-button" id="theme-reset">Reset Theme</button>
+      <button class="style-button" id="card-reset">Reset Cards</button>
+    </div>
     <script type="module" src="JS/main.js"></script>
   </body>
 </html>

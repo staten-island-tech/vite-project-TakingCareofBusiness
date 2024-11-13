@@ -91,7 +91,7 @@ let albums = [
   },
   {
     name: "Fetty Wap (Deluxe Edition)",
-    artist: "Fettyy Wap",
+    artist: "Fetty Wap",
     releaseDate: 2015,
     genre: "Hip-Hop",
     albumLength: 77,
