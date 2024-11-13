@@ -52,5 +52,10 @@ function sortButtons(array) {
       cardAdder(newArray);
     });
 }
+function changeBackground() {
+  document
+    .querySelector(".style-button-container")
+    .addEventListener("click", function (event) {});
+}
 cardAdder(albums);
 sortButtons(albums);
