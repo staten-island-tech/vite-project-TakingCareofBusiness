@@ -201,10 +201,10 @@ let albums = [
     name: "Midnight Marauders",
     artist: "A Tribe Called Quest",
     releaseDate: 1993,
-    genre: ["Boom-Bap", "East-Coast", "Hip-Hop", "Jazz-Rap"],
-    albumLength: 42,
-    albumAmount: 9,
-    cover: "TheNylonCurtain.png",
+    genre: ["Boom-Bap", "East-Coast", "Hip-Hop", "Jazz", "Rap"],
+    albumLength: 51,
+    albumAmount: 14,
+    cover: "MidnightMarauders.png",
   },
 ];
 export { albums };
