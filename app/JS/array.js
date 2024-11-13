@@ -206,5 +206,14 @@ let albums = [
     albumAmount: 14,
     cover: "MidnightMarauders.png",
   },
+  {
+    name: "Make Yourself",
+    artist: "Incubus",
+    releaseDate: 1999,
+    genre: ["Alternative", "Rock"],
+    albumLength: 48,
+    albumAmount: 13,
+    cover: "MakeYourself.png",
+  },
 ];
 export { albums };
