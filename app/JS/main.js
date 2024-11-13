@@ -16,16 +16,16 @@ function sortButtons(array) {
     .querySelector(".sort-button-genre")
     .addEventListener("click", function (event) {
       document.querySelector(".card-container").innerHTML = "";
-      let selectedValueRange = event.target.value;
+      let selectedGenre = event.target.value;
+      console.log(selectedGenre);
       newArray = Object.values(array).filter(
-        (album) => album.genre === selectedValueRange
+        (album) => album.genre === selectedGenre
       );
+      cardAdder(newArray);
     });
   document
     .querySelector(".sort-button-date")
     .addEventListener("click", function (event) {
-      let category = event.target.className;
-      console.log(category);
       document.querySelector(".card-container").innerHTML = "";
       let selectedValueRange = event.target.value;
       let rangeSplit = selectedValueRange.split("-");
@@ -34,6 +34,20 @@ function sortButtons(array) {
       newArray = Object.values(array).filter(
         (album) =>
           album.releaseDate >= rangeBottom && album.releaseDate <= rangeTop
+      );
+      cardAdder(newArray);
+    });
+  document
+    .querySelector(".sort-button-length")
+    .addEventListener("click", function (event) {
+      document.querySelector(".card-container").innerHTML = "";
+      let selectedLengthRange = event.target.value;
+      let rangeSplit = selectedLengthRange.split("-");
+      let lengthBottom = rangeSplit[0];
+      let lengthTop = rangeSplit[1];
+      newArray = Object.values(array).filter(
+        (album) =>
+          album.albumLength >= lengthBottom && album.albumLength <= lengthTop
       );
       cardAdder(newArray);
     });
